@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Car View</title>
+	<link rel="stylesheet" href="src/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="src/script.js"></script>
+</head>
+<body>
+	<section id="display-car" style="background-image: url('img/carro/car3.jpg')">
+		
+		<div class="logo">
+			<img src="img/roda/logo.jpg" alt="">
+		</div>
+		<div class="roda" id="roda1"></div>		
+		<div class="roda" id="roda2"></div>	
+	
+	</section>
+
+	<section id="display-roda" style="background-image: url('img/roda/roda2.png')">
+		<div class="roda" id="roda1"></div>		
+		<div class="roda" id="roda2"></div>		
+	</section>	
+
+
+	<section id="controles">
+		<section id="controle-roda">
+			<a href="#" onclick=" return mudaRoda(1)">Roda 1</a> <br>
+			<a href="#" onclick=" return mudaRoda(2)">Roda 2</a> <br>
+			<a href="#" onclick=" return mudaRoda(3)">Roda 3</a><br>
+		</section>
+
+		<br>
+
+		<section id="controle-car">
+			<a href="#" onclick=" return mudaCarro(1)">Carro 1</a> <br>
+			<a href="#" onclick=" return mudaCarro(2)">Carro 2</a> <br>
+			<a href="#" onclick=" return mudaCarro(3)">Carro 3</a><br>
+		</section>
+	</section>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+	background-color: gray;
+	margin: 0;
+	padding: 0;
+}
+
+	#display-car {
+		width: 600px;
+		height: 400px;
+		position: absolute;
+	    background-position: bottom left;
+	    background-repeat: no-repeat;
+	    background-color: white;	
+		top: 0px;
+		left:0px;
+	}
+
+	#display-roda {
+		width: 600px;
+		height: 400px;
+		position: absolute;
+		top: 0px;
+		left:0px;
+	    background-position: bottom left;
+	    background-repeat: no-repeat;
+	}	
+
+	.logo {
+		float: right;
+	}
+
+#controles {
+	background-color: yellow;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 10;
+}
