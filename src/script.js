@@ -1,3 +1,13 @@
+/* 
+ author: @natojs
+ 06/04/2016
+ 
+	controles do sistema
+	
+*/
+
+
+
 $(document).ready(function() {
 	
 
@@ -25,4 +35,5 @@ function mudaCarro(carroAtual) {
 	$('#display-car').css('background-image', 'url("img/carro/car'+carroAtual+'.jpg")');	
 	return false;
 }
+
 

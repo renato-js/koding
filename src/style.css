@@ -1,5 +1,13 @@
+/* 
+ author: @natojs
+ 06/04/2016
+ 
+
+*/
+
+
 body {
-	background-color: gray;
+	background-color: white;
 	margin: 0;
 	padding: 0;
 }
@@ -8,21 +16,21 @@ body {
 		width: 600px;
 		height: 400px;
 		position: absolute;
-	    background-position: bottom left;
-	    background-repeat: no-repeat;
-	    background-color: white;	
-		top: 0px;
-		left:0px;
+		background-position: bottom left;
+		background-repeat: no-repeat;
+		background-color: white;	
+		top: 0;
+		left:0;
 	}
 
 	#display-roda {
 		width: 600px;
 		height: 400px;
 		position: absolute;
-		top: 0px;
-		left:0px;
-	    background-position: bottom left;
-	    background-repeat: no-repeat;
+		top: 0;
+		left:0;
+		background-position: bottom left;
+		background-repeat: no-repeat;
 	}	
 
 	.logo {
@@ -30,9 +38,53 @@ body {
 	}
 
 #controles {
-	background-color: yellow;
+	/*background-color: yellow;*/
 	position: absolute;
 	top: 10px;
 	left: 10px;
 	z-index: 10;
+}
+
+
+/* content do projeto */
+#content-project {
+	background-color: green;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;	
+}
+
+
+.bt-verde {
+background-color: #318834;
+    border: none;
+    color: white;
+    padding: 4px 39px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+    border: 1px solid gray;
+    margin-bottom: 3px;
+        font-weight: 100;
+    font-family:"Open Sans",sans-serif;
+	transition: background-color .3s;
+	-webkit-transition: background-color .3s;
+}
+
+.bt-verde:hover {
+	background-color: #379A3A;
+	transition: background-color .3s;
+	-webkit-transition: background-color .3s;	
+}
+
+
+#footer {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	
 }
