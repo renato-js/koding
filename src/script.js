@@ -6,11 +6,10 @@
 	
 */
 
-
-
 $(document).ready(function() {
 	
-
+	updateData();
+	
 	// itens
 	var rodaAtual = 1;
 	var carAtual = 1;
@@ -36,4 +35,17 @@ function mudaCarro(carroAtual) {
 	return false;
 }
 
-
+// Carregar dados atualizados do banco de dados
+function updateData () {
+    archivoValidacion = "http://renatojsantos.com.br/koding/update.php?jsoncallback=?"
+    $.getJSON( archivoValidacion )
+    
+    // recupera os dados
+    .done(function(respuestaServer) {
+		// atualiza caso tenha modificado
+		innerHtmlViewCar = respuestaServer.innerHtmlCar; 		
+		innerHtmlViewRoda = respuestaServer.innerHtmlRoda; 		
+		$("#controle-car").html('<h1>Carros</h1>'+innerHtmlViewCar);
+		$("#controle-roda").html('<h1>Rodas</h1>'+innerHtmlViewRoda);
+    });		
+}
